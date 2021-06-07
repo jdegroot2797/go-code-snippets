@@ -27,6 +27,7 @@ func allArticles(w http.ResponseWriter, r *http.Request){
 
 func testPostArticles(w http.ResponseWriter, r *http.Request){
 	fmt.Fprint(w, "POST endpoint hit: testPostArticles")
+	fmt.Println(r.GetBody())
 }
 
 func homePage(w http.ResponseWriter, r *http.Request){
@@ -46,5 +47,6 @@ func handleRequests() {
 }
 
 func main() {
+	//test
     handleRequests()
 }
